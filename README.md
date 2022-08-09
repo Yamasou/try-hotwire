@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Hotwire](https://hotwired.dev/) を試すリポジトリです。
+[Hotrails](https://www.hotrails.dev/) のチュートリアルに沿って試す。
 
-Things you may want to cover:
+### 依存ライブラリのインストールとデータベースの作成
 
-* Ruby version
+```sh
+$ bin/setup
+```
 
-* System dependencies
+### ローカルサーバーの起動
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+$ bin/dev
+```
