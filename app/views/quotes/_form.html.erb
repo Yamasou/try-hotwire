@@ -5,6 +5,9 @@
     </div>
   <% end %>
 
-  <%= f.text_field :name, input_html: { autofocus: true } %>
-  <%= f.submit class: "btn btn--secondary" %>
+  <div class="form__group">
+    <%= f.label :name, class: "visually-hidden" %>
+    <%= f.text_field :name, input_html: { autofocus: true }, class: "form__input #{'form__input--invalid' if quote.errors[:name].present?}" %>
+    <%= f.submit class: "btn btn--secondary" %>
+  </div>
 <% end %>
