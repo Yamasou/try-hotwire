@@ -8,6 +8,7 @@
   <div class="form__group">
     <%= f.label :name, class: "visually-hidden" %>
     <%= f.text_field :name, input_html: { autofocus: true }, class: "form__input #{'form__input--invalid' if quote.errors[:name].present?}" %>
+    <%= link_to "Cancel", quotes_path, class: "btn btn--light" %>
     <%= f.submit class: "btn btn--secondary" %>
   </div>
 <% end %>

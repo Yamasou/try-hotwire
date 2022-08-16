@@ -2,11 +2,12 @@
   <turbo-frame id="header-frame">
     <div class="header">
       <h1>Quotes</h1>
-      <%= link_to "New quote", new_quote_path, class: "btn btn--primary", data: { turbo_frame: "second-frame" } %>
+      <%= link_to "New quote", new_quote_path, class: "btn btn--primary", data: { turbo_frame: dom_id(Quote.new) } %>
     </div>
   </turbo-frame>
 
-  <turbo-frame id="second-frame">
+  <turbo-frame id="<%= dom_id(Quote.new) %>"></turbo-frame>
+  <turbo-frame id="quotes">
     <%= render @quotes %>
   </turbo-frame>
 </main>
